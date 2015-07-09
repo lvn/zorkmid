@@ -1,0 +1,14 @@
+#!/usr/bin/expect
+spawn zork1
+
+while {1} {
+  gets stdin line
+  if { [ string length $line ] > 0 } {
+    send "$line\n"
+  }
+  expect ".*"
+}
+
+puts "exiting"
+wait
+close $spawn_id
