@@ -1,6 +1,6 @@
 {
   "name": "zorkmid",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "zork slack bot",
   "main": "index.js",
   "scripts": {
